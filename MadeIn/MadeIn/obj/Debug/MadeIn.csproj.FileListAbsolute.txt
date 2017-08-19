@@ -9,6 +9,7 @@ C:\Users\Joaquin\Documents\Github\MadeIn\MadeIn\MadeIn\bin\Debug\Xamarin.Forms.P
 C:\Users\Joaquin\Documents\Github\MadeIn\MadeIn\MadeIn\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\Joaquin\Documents\Github\MadeIn\MadeIn\MadeIn\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\Joaquin\Documents\Github\MadeIn\MadeIn\MadeIn\obj\Debug\MadeIn.csprojResolveAssemblyReference.cache
+C:\Users\Joaquin\Documents\Github\MadeIn\MadeIn\MadeIn\obj\Debug\MadeIn.csproj.CoreCompileInputs.cache
 C:\Users\Joaquin\Documents\Github\MadeIn\MadeIn\MadeIn\obj\Debug\MadeIn.MainPage.xaml.g.cs
 C:\Users\Joaquin\Documents\Github\MadeIn\MadeIn\MadeIn\obj\Debug\MadeIn.App.xaml.g.cs
 C:\Users\Joaquin\Documents\Github\MadeIn\MadeIn\MadeIn\obj\Debug\MadeIn.dll
