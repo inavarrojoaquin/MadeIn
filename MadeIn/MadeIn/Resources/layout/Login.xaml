@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MadeIn.Resources.layout.Login">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand" Spacing="0">
+
+                <BoxView HeightRequest="20" />
+
+                <Label  Text="MadeIn" HorizontalOptions="Center" FontSize="40" TextColor="White" />
+
+                <BoxView  HeightRequest="20" />
+
+                <BoxView HeightRequest="3" BackgroundColor="White" />
+
+                <Label Text="Sign In" HorizontalOptions="Center" TextColor="White" FontSize="20" Margin="0,15,0,10"></Label>
+
+                <StackLayout Spacing="0" >
+                    <Entry x:Name="emailEntry" FontSize="15" TextColor="White" InputTransparent="True" BackgroundColor="Transparent" PlaceholderColor="White" Placeholder="Email" Keyboard="Email" HorizontalTextAlignment="Center" />
+                    <Entry x:Name="passwordEntry" FontSize="15" TextColor="White" BackgroundColor="Transparent" Placeholder="Password" IsPassword="true" PlaceholderColor="White" HorizontalTextAlignment="Center" />
+                    <Button Text="Log in" BackgroundColor="Transparent" BorderColor="White" BorderWidth="1" HeightRequest="32" FontSize="12" BorderRadius="10" Margin="0,6,0,0" />
+                </StackLayout>
+
+                <BoxView HeightRequest="3" BackgroundColor="White" Margin="0,10,0,15" />
+
+                <Button Text="Register" Clicked="OnRegisterButton" BackgroundColor="Transparent" BorderRadius="10" BorderColor="White" HeightRequest="32" WidthRequest="120" Font="12" BorderWidth="1" HorizontalOptions="Center" />
+                <Label Text="Or Connect With" HorizontalOptions="Center" Margin="0,5,0,-15" />
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Scale="0.6">
+                    <Button x:Name="btnFacebook" BackgroundColor="Transparent" Scale="1" />
+                    <Button x:Name="btnGoogle" BackgroundColor="Transparent" Scale="1" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MadeIn.Resources.layout.Register">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand" Spacing="0">
+
+                    <BoxView HeightRequest="20" />
+
+                    <Label  Text="MadeIn" HorizontalOptions="Center" FontSize="40" TextColor="White" />
+
+                    <BoxView  HeightRequest="20" />
+
+                    <BoxView HeightRequest="3" BackgroundColor="White" />
+
+                    <StackLayout Spacing="0" Margin="0,15,0,15">
+                        <Entry x:Name="nameEntry" HorizontalOptions="FillAndExpand" Placeholder="Name" FontSize="15" TextColor="White" InputTransparent="True" BackgroundColor="Transparent" PlaceholderColor="White" HorizontalTextAlignment="Center" />
+                        <Entry x:Name="emailEntry" HorizontalOptions="CenterAndExpand" Placeholder="E-mail" Keyboard="Email" FontSize="15" TextColor="White" BackgroundColor="Transparent" PlaceholderColor="White" HorizontalTextAlignment="Center" />
+                        <Entry x:Name="passwordEntry" Placeholder="Password"  FontSize="15" TextColor="White" BackgroundColor="Transparent"  IsPassword="true" PlaceholderColor="White" HorizontalTextAlignment="Center"/>
+                        <Entry x:Name="confirmationpasswordEntry" Placeholder="Confirm Password" IsPassword="true" FontSize="15" TextColor="White" BackgroundColor="Transparent" PlaceholderColor="White" HorizontalTextAlignment="Center"/>
+                        <DatePicker x:Name="birthDateEntry"  VerticalOptions="CenterAndExpand" TextColor="White" BackgroundColor="Transparent" />
+                        <Picker x:Name="countriesPicker" />
+                    </StackLayout>
+
+                    <Button Text="Register" BackgroundColor="Transparent" BorderRadius="10" BorderColor="White" HeightRequest="35" WidthRequest="120" Font="12" BorderWidth="1" HorizontalOptions="Center" />
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

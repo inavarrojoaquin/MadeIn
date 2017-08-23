@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using MadeIn.Resources.layout;
 
 using Xamarin.Forms;
 
@@ -13,7 +10,8 @@ namespace MadeIn
         {
             InitializeComponent();
 
-            MainPage = new MadeIn.MainPage();
+            Current.MainPage = new NavigationPage(new Login());
+            
         }
 
         protected override void OnStart()
