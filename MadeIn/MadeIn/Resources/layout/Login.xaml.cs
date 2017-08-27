@@ -20,9 +20,14 @@ namespace MadeIn.Resources.layout
 
         }
 
-        void OnRegisterButton(object sender, EventArgs args)
+        async void OnLogInButton(object sender, EventArgs args)
+        {
+            await Navigation.PushModalAsync(new Home());            
+        }
+
+        async void OnRegisterButton(object sender, EventArgs args)
         {            
-            Navigation.PushModalAsync(new Register());
+            await Navigation.PushAsync(new Register(), true);
         }
 
     }

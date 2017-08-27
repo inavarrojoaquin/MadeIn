@@ -19,7 +19,7 @@
                 <StackLayout Spacing="0" >
                     <Entry x:Name="emailEntry" FontSize="15" TextColor="White" InputTransparent="True" BackgroundColor="Transparent" PlaceholderColor="White" Placeholder="Email" Keyboard="Email" HorizontalTextAlignment="Center" />
                     <Entry x:Name="passwordEntry" FontSize="15" TextColor="White" BackgroundColor="Transparent" Placeholder="Password" IsPassword="true" PlaceholderColor="White" HorizontalTextAlignment="Center" />
-                    <Button Text="Log in" BackgroundColor="Transparent" BorderColor="White" BorderWidth="1" HeightRequest="32" FontSize="12" BorderRadius="10" Margin="0,6,0,0" />
+                    <Button Text="Log in" Clicked="OnLogInButton" BackgroundColor="Transparent" BorderColor="White" BorderWidth="1" HeightRequest="32" FontSize="12" BorderRadius="10" Margin="0,6,0,0" />
                 </StackLayout>
 
                 <BoxView HeightRequest="3" BackgroundColor="White" Margin="0,10,0,15" />

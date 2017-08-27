@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MadeIn.Resources.layout.HomeDetail"
+             Title="MadeIn">
+    <Grid Padding="5" ColumnSpacing="5" RowSpacing="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="lblPresentationDetail" 
+               TextColor="Black" 
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               BackgroundColor="Aqua" 
+               Text="Show this night" />
+        <Label x:Name="lblNews" 
+               Grid.Row="1" 
+               TextColor="Black" 
+               HorizontalTextAlignment="Start"
+               BackgroundColor="Aquamarine" 
+               Text="News"  />
+        <Label x:Name="lblNews1" 
+               Grid.Row="2" 
+               TextColor="Black" 
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               BackgroundColor="AntiqueWhite" 
+               Text="Show this night" />
+        <Label x:Name="lblNews2" 
+               Grid.Row="3" 
+               TextColor="Black" 
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               BackgroundColor="Beige" 
+               Text="Show this night"  />
+        <Label x:Name="lblNews3" 
+               Grid.Row="4" 
+               TextColor="Black" 
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               BackgroundColor="Coral" 
+               Text="Show this night"  />
+    </Grid>
+</ContentPage>

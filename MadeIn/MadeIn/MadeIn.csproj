@@ -42,6 +42,16 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\layout\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\layout\HomeDetail.xaml.cs">
+      <DependentUpon>HomeDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\layout\HomeMaster.xaml.cs">
+      <DependentUpon>HomeMaster.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\layout\HomeMenuItem.cs" />
     <Compile Include="Resources\layout\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
@@ -81,6 +91,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\layout\Register.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\layout\Home.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\layout\HomeMaster.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\layout\HomeDetail.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

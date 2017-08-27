@@ -44,9 +44,9 @@ namespace MadeIn.Resources.layout
 
             // Accomodate iPhone status bar.
             this.Padding = new Thickness(10, Device.OnPlatform(20, 0, 0), 10, 5);
-
+            
         }
-
+        
         private Dictionary<string, string> PopulatingCountryList(Dictionary<string,string> dictionary)
         {
             dictionary = new Dictionary<string, string>()

@@ -9,8 +9,17 @@ namespace MadeIn
         public App()
         {
             InitializeComponent();
+            var userIsLogged = false;
 
-            Current.MainPage = new NavigationPage(new Login());
+            if (userIsLogged)
+            {
+                Current.MainPage = new NavigationPage(new Home());
+            }
+            else
+            {
+                Current.MainPage = new NavigationPage(new Login());
+            }
+            
             
         }
 

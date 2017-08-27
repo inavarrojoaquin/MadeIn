@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MadeIn.Resources.layout.HomeMaster"
+             Title="MadeIn">
+    <StackLayout BackgroundColor="#5B5756">
+    <ListView x:Name="MenuItemsListView"
+              SeparatorVisibility="None"
+              HasUnevenRows="true"
+              ItemsSource="{Binding MenuItems}">
+      <ListView.Header>
+        <Grid BackgroundColor="OrangeRed">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="10"/>
+            <!--<ColumnDefinition Width="10"/>-->
+          </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="Auto"/>
+                <!--<RowDefinition Height="Auto"/>-->
+                <!--<RowDefinition Height="10"/>-->
+            </Grid.RowDefinitions>
+                    <Image Source="home-icon.png" Grid.Column="1" Grid.Row="2"/>
+                    <Label
+              Grid.Column="2"
+              Grid.Row="2"
+              Text="Home"
+              FontSize="20"
+              Style="{DynamicResource SubtitleStyle}"/>
+        </Grid>
+      </ListView.Header>
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+                        <StackLayout VerticalOptions="FillAndExpand"
+                             Orientation="Horizontal"
+                             Padding="20,10,0,10"
+                             Spacing="20">
+
+                            <Image Source="{Binding Icon}"
+                         WidthRequest="40"
+                         HeightRequest="40"
+                         VerticalOptions="Center" />
+
+                            <Label Text="{Binding Title}"
+                         FontSize="Medium"
+                         VerticalOptions="Center"
+                         TextColor="White"/>
+                        </StackLayout>
+                        <!--<StackLayout Padding="20,10" HorizontalOptions="FillAndExpand">
+                            <Image Source="{Binding Icon}"
+                             WidthRequest="10"
+                             HeightRequest="10"
+                             BackgroundColor="Aqua" />
+                            <Label VerticalOptions="FillAndExpand" 
+                            VerticalTextAlignment="Center" 
+                            Text="{Binding Title}" 
+                            BackgroundColor="Transparent"
+                            TextColor="White"
+                            FontSize="18"/>
+                        </StackLayout>-->
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+</ContentPage>
